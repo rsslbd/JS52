@@ -1,0 +1,67 @@
+
+<script>
+var car = {
+    name : "Tesla",
+    model : 720,
+    price : 120.02,
+    status : true
+};
+console.log(car.model);
+console.log(car["model"]);
+
+var fruit = new Object();
+fruit.name = "Apple";
+fruit.color = "Red";
+fruit.price = 102;
+
+console.log(fruit.name);
+console.log(fruit["name"]);
+
+var laptop = {
+    name : "Dell",
+    color : "White",
+    model : 1520,
+    price : 54421,
+    processor : "corei5",
+    fanspeed : function(){
+        console.log("abc");
+    },
+    prop1 : function(){
+        console.log("dedf");
+    },
+    colors : ['red', 'green', 'black'],
+    motherboard : {
+        chip1 : "1",
+        chip2 : "2",
+        chip3 : function(){
+            console.log("chip3");
+        },
+        chip4 : {}
+    }
+}
+laptop.motherboard.chip3();
+//Object.property
+//laptop.prop();
+//console.log();
+
+
+
+
+// var window = {
+//     document : {
+
+//     },
+//     console : {
+//         log : function(){
+
+//         }
+//     }
+// }
+window.console.log("hello.....");
+
+var s = "sdghdghghgh";
+console.log(s.toUpperCase());
+
+var n = 0;
+var ar = [];
+</script>

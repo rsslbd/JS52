@@ -1,0 +1,80 @@
+<button onclick="doSum(parseInt(prompt('Enter a number')), parseInt(prompt('Enter another number')))">Click</button>
+
+<script>
+    // function call
+    
+
+    var a = 10;
+    var b = 20;
+
+    var arr = [20, 10, 50, 15, 60];
+    // length - 5
+    //index position 0-4
+
+    var arr1 = ["A", "B", "C"];
+    var arr2 = [2, "A", 3, "B", false]; //array literal
+
+    console.log(arr2[0]);
+    console.log(arr2[1]);
+    console.log(arr2[2]);
+    console.log(arr2[3]);
+    console.log(arr2[4]);
+
+    var arrNew1 = new Array("", "", ""); //dense array
+
+
+    var myArray = [];
+    myArray[0] = 100;
+    myArray[1] = 200;
+    myArray[2] = 300;
+    myArray[3] = 400;
+    myArray[4] = 500;
+    console.log(typeof myArray);
+
+    for(i=3; i<5; i++){
+        console.log(i);
+    }
+
+    var t = 10;
+    var v = 0;
+    while(v<t){
+        console.log("test " + v);
+        v++;
+    }
+    console.log(v);
+
+    do{
+        console.log("false condition");
+    }while(8<7)
+
+    // --------------- function -----------------
+    // function declaration
+    function doSum(num1, num2){ // parameter
+        alert("The sum is " + (num1 + num2));
+    }
+
+   //doSum(parseInt(prompt()), parseInt(prompt()));
+
+   //doSum(10, 20);
+   myFunc1(20);
+  
+var myFunc = function(a){
+    console.log("myFunc function "  + a);
+}
+myFunc(10);
+
+function myFunc1(a){
+    console.log("myFunc 1 function "  + a);
+}
+var mark = 100; //global
+function test(){
+    var mark = 50; //local
+    console.log("testing " + mark);
+    return "aa";
+}
+console.log(test());
+console.log(mark);
+
+
+
+</script>
