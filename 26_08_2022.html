@@ -1,0 +1,40 @@
+
+<button onclick="myColors()">Button</button>
+<a href="javascript:void">Link</a>
+<script>
+var colors = ["red", "green", "grey", "pink", "skyblue", "blue", "yellow", "purple", "violet", "aqua"];
+    colors[4];
+document.write("<h2 style='color : " + colors[Math.round(Math.random()*10)] + "'>Hello World</h2>");
+function myColors(){
+    document.write("<h2 style='color : " + colors[Math.round(Math.random()*10)] + "'>Hello World</h2>");
+}
+
+
+
+
+
+var arr = new Array(10, "A", 20, 50, "C");
+for(a in arr){
+    console.log(arr[a]);
+}
+var obj = {
+    name : "Mr. X",
+    status : function(){
+
+    }
+}
+
+console.log(typeof arr);
+
+function test(){
+    console.log("Test");
+}
+
+//test();
+function test1(value){
+    return 8;
+}
+test1(2);
+var temp = test1();
+console.log(test1());
+</script>

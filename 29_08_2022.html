@@ -1,0 +1,47 @@
+
+<button onmouseleave="basic()">Click Me</button>
+<script>
+function basic(){
+    console.log("button clicked");
+}
+
+
+function abc(){
+    return "pass";
+}
+function test(){
+    return abc();
+}
+var _a = 10;
+var a = test();
+//console.log(test());
+
+function testA(){
+    var a = 10;
+    var b = 15;
+    var c = a + b;
+    console.log(c);
+}
+var t = testA();
+console.log("t : " + t);
+function testB(a, b){
+    var c = a + b;
+    return c;
+}
+var tt = testB(10, 20);
+console.log("tt : " + tt);
+
+function A(func){ 
+    console.log(func(B()));
+    return 5;
+}
+function B(){ return 10;}
+function C(){ return 15;}
+
+function Base(a, b, c){
+    return a+b+c;
+}
+console.log(Base(A(function(param){console.log("hello"); return param;}), B(), C()));
+var d = function(){console.log("hello")};
+console.log(d());
+</script>

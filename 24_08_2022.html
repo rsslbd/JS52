@@ -1,0 +1,63 @@
+<script>
+    //string methods
+    //number methods
+    //array methods
+
+
+    var str = "This is a string";
+    var c = "A " + "B";
+    //console.log(str.length);
+    //console.log(str.lastIndexOf(""));
+    //console.log(str.lastIndexOf("s"));
+    //console.log(str.concat(" + concatted string"));
+
+    var s = "We love Bangladesh";
+    console.log(s.substring(3, 7));
+    console.log(s.slice(3, 7));
+    console.log(s.substr(0, 7));
+
+    console.log(s.replace("We love", "Everyone loves"));
+
+    var ss = "                Hello      World           ";
+    console.log(ss.trim());
+
+
+    console.log(Math.PI);
+
+    var arr = [1, 2, 3, 4, 5];
+    console.log(arr);
+    arr.push(6);
+    console.log(arr);
+
+
+    function test(...a){ //rest parameter
+        for(i=0; i<a.length; i++){
+            console.log(a[i]);
+        }
+            
+    }
+    test(10, 20, 50, 10, 45);
+
+
+    var count = 0;
+    function test(){
+        count++;
+        if(count < 6){
+            console.log("test");
+            test();
+        }
+    }
+    test();
+
+
+    function age(){
+        return 25;
+    }
+
+    async function age1(){
+        return 28;
+    }
+
+    console.log(age1());
+
+</script>
