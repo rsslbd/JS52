@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- Form Control -->
+      <fieldset>
+        <legend>Trainee Form</legend>
+        <form onsubmit="getFormValues(); return false;" id="my_form" name="my_form">
+            Name
+            <input type="text" autofocus placeholder="Write name.." name="name"><br>
+           Email
+            <input type="email" id="email">
+            <br>
+            Gender
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" checked value="Female"> Female
+            <br>
+           
+            <label>Country</label>
+            <select name="country">
+                <option value="BD">BD</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <option value="CA">CA</option>
+            </select>
+            <br>
+            <label>Address</label>
+            <textarea rows="3" cols="12" name="address"></textarea>
+            <br>
+            <label>Education</label>
+            <input type="checkbox" value="SSC" name="course"> SSC
+            <input type="checkbox" value="HSC" name="course"> HSC
+            <input type="checkbox" value="BSC" name="course"> BSC
+            <input type="checkbox" value="MSC" name="course"> MSC
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+      </fieldset>
+      <textarea name="box" id="box" cols="30" rows="8"></textarea>
+      <script>
+
+ // with
+        function getFormValues(){
+          var name = document.my_form.name.value;
+          var email = document.my_form.email.value;
+          console.log(name);
+          with(document.my_form){
+            var _name = name.value;
+            var _email = email.value;
+          }
+          console.log(_name);
+        }
+
+        //ternary operator
+        var a = (true) ? "7 bigger" : "5 smaller";
+        console.log(a);
+
+        //strict equality operator
+        console.log(7==="7");
+
+        //Modulas operator
+        console.log(5%2);
+
+        // ++ --
+        var s = 10;
+        s++;
+        console.log(++s);
+
+        var s1 = "ab";
+        var s2 = "ba";
+        console.log(s1>s2);
+
+        if(!5!==5){
+            console.log("hello");
+        }else{
+            console.log("hi");
+        }
+
+        // typeof
+        var v =  5 + "5" + 5 + 5 - 5 + false + true;
+        console.log(v);
+        console.log(typeof v);
+        
+
+        var aa = new Array();
+        aa[0] = "Hello";
+        aa[1] = "World";
+        aa[2] = "Next";
+
+        delete aa[1];
+
+        console.log(aa[0] + " " + aa[1]);
+        var ab = new Object();
+
+
+      </script>
+  </body>
+</html>
